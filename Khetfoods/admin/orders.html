@@ -1,0 +1,163 @@
+<!-- Hide column for admin in v2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khet Foods Dashboard - Orders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        select option:checked {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-800 text-white">
+            <div class="p-4">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PHOTO-2024-07-12-09-30-33%201-IIToyTatDGOcrlSw2dYbPtUEg97BMY.jpg" alt="Khet Foods Logo" class="w-32 h-32 mb-4">
+                <nav>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">Dashboard</a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">Announcements</a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">Users</a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">Connected Accounts</a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">Accounts</a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">Account Users</a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">Plans</a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">Pay Customers</a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">Pay Charges</a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">Pay Payment Methods</a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">Pay Subscriptions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8 overflow-auto">
+            <div class="flex items-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                <h1 class="text-3xl font-bold text-yellow-700">All Orders</h1>
+            </div>
+
+            <!-- Orders Table -->
+            <div class="bg-white shadow-md rounded-lg overflow-x-scroll">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">ID</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">TOTAL PRICE</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">STATUS </th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">PRODUCTS</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">EMAIL</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">NAME</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">AREA</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">CITY</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">STATE</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">ORDER TYPE</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">DELIVERY DAYS</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">ASSIGNED DRIVER</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">TIMING</th>
+                            <th class="px-6 py-3 text-left text-xs font-black text-yellow-800 uppercase tracking-wider">ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">3</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$20.00</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <p class="opacity-0 text-xs leading-0 -mt-3">Pending PendingPe</p>
+                                <select class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-1 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <option value="pending" class="font-semibold text-yellow-600">Pending</option>
+                                    <option value="confirmed" class="font-semibold text-green-600">Confirmed</option>
+                                    <option value="shipped" class="font-semibold text-blue-600">Shipped</option>
+                                    <option value="delivered" class="font-semibold text-purple-600">Delivered</option>
+                                    <option value="canceled" class="font-semibold text-red-600">Canceled</option>
+                                </select>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">App x 1</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">you@example.com</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Balaji</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Phirni</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Ranchi</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Jharkhand</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Order</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Monday, Tuesday, Wednesday</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Not Assigned</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-09-23 04:07</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="#" class="text-blue-600 hover:text-blue-900 mr-3">View</a>
+                                <a href="#" class="text-red-600 hover:text-red-900">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$20.00</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <select class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-1 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <option value="pending" class="font-semibold text-yellow-600">Pending</option>
+                                    <option value="confirmed" class="font-semibold text-green-600">Confirmed</option>
+                                    <option value="shipped" class="font-semibold text-blue-600">Shipped</option>
+                                    <option value="delivered" class="font-semibold text-purple-600">Delivered</option>
+                                    <option value="canceled" class="font-semibold text-red-600">Canceled</option>
+                                </select>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">App x 1</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">xyz@gmail.com</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">XYZ</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Phirni</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Kharar</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Punjab</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Order</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Monday, Tuesday, Wednesday</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Not Assigned</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-09-14 14:04</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="#" class="text-blue-600 hover:text-blue-900 mr-3">View</a>
+                                <a href="#" class="text-red-600 hover:text-red-900">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$59,000.00</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <select class="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-1 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                    <option value="pending" class="font-semibold text-yellow-600">Pending</option>
+                                    <option value="confirmed" class="font-semibold text-green-600">Confirmed</option>
+                                    <option value="shipped" class="font-semibold text-blue-600">Shipped</option>
+                                    <option value="delivered" class="font-semibold text-purple-600">Delivered</option>
+                                    <option value="canceled" class="font-semibold text-red-600">Canceled</option>
+                                </select>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">App x 1</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">xyz@gmail.com</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">XYZ</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Phirni</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Kharar</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Punjab</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Order</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Monday, Tuesday, Wednesday</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Not Assigned</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-09-12 13:53</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="#" class="text-blue-600 hover:text-blue-900 mr-3">View</a>
+                                <a href="#" class="text-red-600 hover:text-red-900">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
