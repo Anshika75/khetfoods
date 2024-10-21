@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khet Foods Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-800 text-white">
+            <div class="p-4">
+                <h1 class="text-2xl font-bold mb-4">Khet Foods</h1>
+                <nav>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Dashboard</a></li>
+                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Announcements</a></li>
+                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Users</a></li>
+                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Connected Accounts</a></li>
+                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Accounts</a></li>
+                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Account Users</a></li>
+                        <li><a href="#" class="block py-2 px-4 bg-gray-700 rounded">Plans</a></li>
+                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Pay Customers</a></li>
+                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Pay Charges</a></li>
+                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Pay Payment Methods</a></li>
+                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Pay Subscriptions</a></li>
+                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700 rounded">Products</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8 overflow-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-3xl font-bold text-yellow-700">Plans</h1>
+                <div class="flex space-x-4">
+                    <input type="text" placeholder="Search Plans" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+                        New plan
+                    </button>
+                </div>
+            </div>
+
+            <!-- Plans Table -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-sm font-black text-yellow-800 uppercase tracking-wider">Id</th>
+                            <th class="px-6 py-3 text-left text-sm font-black text-yellow-800 uppercase tracking-wider">Name</th>
+                            <th class="px-6 py-3 text-left text-sm font-black text-yellow-800 uppercase tracking-wider">Interval</th>
+                            <th class="px-6 py-3 text-left text-sm font-black text-yellow-800 uppercase tracking-wider">Selected Days String</th>
+                            <th class="px-6 py-3 text-left text-sm font-black text-yellow-800 uppercase tracking-wider">Selected Products And Variants</th>
+                            <th class="px-6 py-3 text-left text-sm font-black text-yellow-800 uppercase tracking-wider">Trial Period Days</th>
+                            <th class="px-6 py-3 text-left text-sm font-black text-yellow-800 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">6</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">plan I</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">custom</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sun-Sat</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sofa : 1 Kg</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">0</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <button class="text-yellow-600 hover:text-yellow-900 mr-3">Edit</button>
+                                <button class="text-red-600 hover:text-red-900">Destroy</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
