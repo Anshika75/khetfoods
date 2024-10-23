@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details - Khet Foods</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h1 class="text-2xl font-bold text-yellow-900">Order #30</h1>
+                    </div>
+                    <div>
+                        <span class="inline-flex items-center rounded-full bg-yellow-100 px-3 py-1 text-sm font-medium text-yellow-800">
+                            Pending
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h2 class="text-lg font-bold uppercase text-gray-800 mb-2">Customer Information</h2>
+                        <p class="text-gray-600 mb-1">
+                            <i class="fas fa-user text-gray-800 opacity-75 mr-2 w-5 text-center md:hidden"></i>
+                            <span class="font-bold hidden md:inline">Name:</span> John Doe
+                        </p>
+                        <p class="text-gray-600 mb-1">
+                            <i class="fas fa-envelope text-gray-800 opacity-75 mr-2 w-5 text-center md:hidden"></i>
+                            <span class="font-bold hidden md:inline">Email:</span> john.doe@example.com
+                        </p>
+                        <p class="text-gray-600 mb-1">
+                            <i class="fas fa-phone text-gray-800 opacity-75 mr-2 w-5 text-center md:hidden"></i>
+                            <span class="font-bold hidden md:inline">Phone:</span> +1 (555) 123-4567
+                        </p>
+                        <p class="text-gray-600">
+                            <i class="fas fa-map-marker-alt text-gray-800 opacity-75 mr-2 w-5 text-center md:hidden"></i>
+                            <span class="font-bold hidden md:inline">Address:</span> 123 Main St, Sector 11, Chandigarh
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-bold uppercase text-gray-800 mb-2">Order Information</h2>
+                        <p class="text-gray-600 mb-1">
+                            <i class="fas fa-tag text-gray-800 opacity-75 mr-2 w-5 text-center md:hidden"></i>
+                            <span class="font-bold hidden md:inline">Order Type:</span> Order
+                        </p>
+                        <p class="text-gray-600 mb-1">
+                            <i class="fas fa-truck text-gray-800 opacity-75 mr-2 w-5 text-center md:hidden"></i>
+                            <span class="font-bold hidden md:inline">Assigned Driver:</span> Not Assigned
+                        </p>
+                        <p class="text-gray-600 mb-1">
+                            <i class="fas fa-calendar text-gray-800 opacity-75 mr-2 w-5 text-center md:hidden"></i>
+                            <span class="font-bold hidden md:inline">Date:</span> 2024-10-09
+                        </p>
+                        <p class="text-gray-600">
+                            <i class="fas fa-clock text-gray-800 opacity-75 mr-2 w-5 text-center md:hidden"></i>
+                            <span class="font-bold hidden md:inline">Time:</span> 19:01
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <h2 class="text-lg font-bold uppercase text-gray-800 mb-2">Order Items</h2>
+                    <table class="w-full">
+                        <thead>
+                            <tr class="text-left text-gray-600 border-b">
+                                <th class="pb-2 text-yellow-800">Product</th>
+                                <th class="pb-2 text-yellow-800">Quantity</th>
+                                <th class="pb-2 text-yellow-800 text-right">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 text-gray-800">Mother Dairy Milk</td>
+                                <td class="py-2 text-gray-800">1</td>
+                                <td class="py-2 text-gray-800 text-right">$200.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-6 flex justify-between items-center">
+                    <span class="text-lg font-bold text-gray-800">Total</span>
+                    <span class="text-lg font-semibold text-yellow-600">$200.00</span>
+                </div>
+            </div>
+            <div class="px-6 py-4 bg-gray-50 border-t border-gray-200 flex flex-col sm:flex-row justify-between space-y-2 sm:space-y-0">
+                <button class="w-full sm:w-auto px-4 py-2 bg-yellow-200 text-yellow-800 rounded hover:bg-yellow-300 transition duration-300">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Orders
+                </button>
+                <button class="w-full sm:w-auto px-4 py-2 bg-red-300 text-red-800 rounded hover:bg-red-500 hover:text-white transition-all duration-300">
+                    <i class="fas fa-times mr-2"></i>Cancel Order
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
