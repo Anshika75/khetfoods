@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khet Foods - Add New Driver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': {
+                            50: '#fffbea',
+                            100: '#fff3c4',
+                            200: '#fce588',
+                            300: '#fadb5f',
+                            400: '#f7c948',
+                            500: '#f0b429',
+                            600: '#de911d',
+                            700: '#cb6e17',
+                            800: '#b44d12',
+                            900: '#8d2b0b',
+                        },
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-800 text-white">
+            <div class="p-4">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PHOTO-2024-07-12-09-30-33%201-IIToyTatDGOcrlSw2dYbPtUEg97BMY.jpg" alt="Khet Foods Logo" class="w-32 h-32 mb-4">
+                <nav>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                            Dashboard
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                            Products
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 bg-gray-700 rounded">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                            Brands
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path></svg>
+                            Categories
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                            Orders
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            Zones
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                            Drivers
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                            Plans
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-gray-700 rounded">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            Users
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl text-yellow-800 font-bold mb-8">Add New Driver</h1>
+
+                <!-- Form Step Indicator -->
+                <div class="mb-8">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div id="step1Indicator" class="rounded-full h-8 w-8 flex items-center justify-center bg-brand-500 text-white font-semibold">1</div>
+                            <div class="ml-2 font-medium text-gray-900">Driver Information</div>
+                        </div>
+                        <div class="hidden sm:block w-12 h-0.5 bg-gray-200"></div>
+                        <div class="flex items-center">
+                            <div id="step2Indicator" class="rounded-full h-8 w-8 flex items-center justify-center bg-gray-200 text-gray-600 font-semibold">2</div>
+                            <div class="ml-2 font-medium text-gray-500">Verification</div>
+                        </div>
+                        <div class="hidden sm:block w-12 h-0.5 bg-gray-200"></div>
+                        <div class="flex items-center">
+                            <div id="step3Indicator" class="rounded-full h-8 w-8 flex items-center justify-center bg-gray-200 text-gray-600 font-semibold">3</div>
+                            <div class="ml-2 font-medium text-gray-500">Contact</div>
+                        </div>
+                        <div class="hidden sm:block w-12 h-0.5 bg-gray-200"></div>
+                        <div class="flex items-center">
+                            <div id="step4Indicator" class="rounded-full h-8 w-8 flex items-center justify-center bg-gray-200 text-gray-600 font-semibold">4</div>
+                            <div class="ml-2 font-medium text-gray-500">Vehicle Details</div>
+                        </div>
+                        <div class="hidden sm:block w-12 h-0.5 bg-gray-200"></div>
+                        <div class="flex items-center">
+                            <div id="step5Indicator" class="rounded-full h-8 w-8 flex items-center justify-center bg-gray-200 text-gray-600 font-semibold">5</div>
+                            <div class="ml-2 font-medium text-gray-500">Assignment</div>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="addDriverForm" class="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
+                    <!-- Step 1: Driver Information -->
+                    <div id="step1" class="space-y-6">
+                        <div>
+                            <label for="firstName" class="block font-semibold text-gray-700 mb-1">First Name</label>
+                            <input id="firstName" name="firstName" type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label for="lastName" class="block font-semibold text-gray-700 mb-1">Last Name</label>
+                            <input id="lastName" name="lastName" type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block font-semibold text-gray-700 mb-1">Email</label>
+                            <input id="email" name="email" type="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label for="password" class="block font-semibold text-gray-700 mb-1">Password</label>
+                            <input id="password" name="password" type="password" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label for="languages" class="block font-semibold text-gray-700 mb-1">Languages Known</label>
+                            <input id="languages" name="languages" type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500" placeholder="Enter languages (comma-separated)">
+                        </div>
+                        <div>
+                            <label for="profilePic" class="block font-semibold text-gray-700 mb-1">Profile Picture</label>
+                            <input id="profilePic" name="profilePic" type="file" accept="image/*" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div>
+                            <button type="button" id="nextStep1" class="w-full bg-brand-600 text-white py-2 px-4 rounded-md hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Verification -->
+                    <div id="step2" class="space-y-6 hidden">
+                        <div>
+                            <label for="aadharNumber" class="block font-semibold text-gray-700 mb-1">Aadhar Number</label>
+                            <input id="aadharNumber" name="aadharNumber" type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label for="panNumber" class="block font-semibold text-gray-700 mb-1">PAN Number</label>
+                            <input id="panNumber" name="panNumber" type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label for="bankAccountNumber" class="block font-semibold text-gray-700 mb-1">Bank Account Number</label>
+                            <input id="bankAccountNumber" name="bankAccountNumber" type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div class="flex justify-between">
+                            <button type="button" id="prevStep2" class="bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Previous</button>
+                            <button type="button" id="nextStep2" class="bg-brand-600 text-white py-2 px-4 rounded-md hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Contact -->
+                    <div id="step3" class="space-y-6 hidden">
+                        <div>
+                            <label for="phoneNumber" class="block font-semibold text-gray-700 mb-1">Phone Number</label>
+                            <input id="phoneNumber" name="phoneNumber" type="tel" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label for="alternativeNumber" class="block font-semibold text-gray-700 mb-1">Alternative Number</label>
+                            <input id="alternativeNumber" name="alternativeNumber" type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label for="address" class="block font-semibold text-gray-700 mb-1">Address</label>
+                            <textarea id="address" name="address" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500" rows="3"></textarea>
+                        </div>
+                        <div class="flex justify-between">
+                            <button type="button" id="prevStep3" class="bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Previous</button>
+                            <button type="button" id="nextStep3" class="bg-brand-600 text-white py-2 px-4 rounded-md hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Vehicle Details -->
+                    <div id="step4" class="space-y-6 hidden">
+                        <div>
+                            <label for="vehicleType" class="block font-semibold text-gray-700 mb-1">Vehicle Type</label>
+                            <select id="vehicleType" name="vehicleType" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                                <option value="">Select vehicle type</option>
+                                <option value="bike">Bike</option>
+                                <option value="scooter">Scooter</option>
+                                <option value="car">Car</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="vehicleNumber" class="block font-semibold text-gray-700 mb-1">Vehicle Number</label>
+                            <input id="vehicleNumber" name="vehicleNumber" type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label for="vehicleRegistrationNumber" class="block font-semibold text-gray-700 mb-1">Vehicle Registration Number</label>
+                            <input id="vehicleRegistrationNumber" name="vehicleRegistrationNumber" type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-500 focus:border-brand-500">
+                        </div>
+                        <div class="flex justify-between">
+                            <button type="button" id="prevStep4" class="bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Previous</button>
+                            <button type="button" id="nextStep4" class="bg-brand-600 text-white py-2 px-4 rounded-md hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Assignment -->
+                    <div id="step5" class="space-y-6 hidden">
+                        <div>
+                            <label for="status" class="block font-semibold text-gray-700 mb-1">
+                                Status
+                            </label>
+                            <div class="flex items-center">
+                                <input id="status" name="status" type="checkbox" class="h-4 w-4 text-brand-600 focus:ring-brand-500 border-gray-300 rounded">
+                                <label for="status" class="ml-2 block text-sm text-gray-900">
+                                    Active
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="zone" class="block font-semibold text-gray-700 mb-1">
+                                Zone
+                            </label>
+                            <select id="zone" name="zone" required class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-brand-500 focus:border-brand-500 sm:text-sm rounded-md">
+                                <option value="">Select a zone</option>
+                                <option value="chandigarh">Chandigarh Zone</option>
+                                <option value="mohali">Mohali Zone</option>
+                                <option value="panchkula">Panchkula Zone</option>
+                            </select>
+                        </div>
+                        <div class="flex justify-between">
+                            <button type="button" id="prevStep5" class="bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Previous</button>
+                            <button type="submit" class="bg-brand-600 text-white py-2 px-4 rounded-md hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const form = document.getElementById('addDriverForm');
+        const steps = ['step1', 'step2', 'step3', 'step4', 'step5'];
+        const indicators = ['step1Indicator', 'step2Indicator', 'step3Indicator', 'step4Indicator', 'step5Indicator'];
+        let currentStep = 0;
+
+        function showStep(stepIndex) {
+            steps.forEach((step, index) => {
+                const element = document.getElementById(step);
+                const indicator = document.getElementById(indicators[index]);
+                if (index === stepIndex) {
+                    element.classList.remove('hidden');
+                    indicator.classList.remove('bg-gray-200', 'text-gray-600');
+                    indicator.classList.add('bg-brand-500', 'text-white');
+                } else {
+                    element.classList.add('hidden');
+                    indicator.classList.remove('bg-brand-500', 'text-white');
+                    indicator.classList.add('bg-gray-200', 'text-gray-600');
+                }
+            });
+        }
+
+        function validateStep(stepIndex) {
+            const stepElement = document.getElementById(steps[stepIndex]);
+            const inputs = stepElement.querySelectorAll('input, select, textarea');
+            let isValid = true;
+            inputs.forEach(input => {
+                if (input.required && !input.value.trim()) {
+                    isValid = false;
+                    input.classList.add('border-red-500');
+                } else {
+                    input.classList.remove('border-red-500');
+                }
+            });
+            return isValid;
+        }
+
+        document.getElementById('nextStep1').addEventListener('click', () => {
+            if (validateStep(0)) {
+                currentStep = 1;
+                showStep(currentStep);
+            }
+        });
+
+        document.getElementById('nextStep2').addEventListener('click', () => {
+            if (validateStep(1)) {
+                currentStep = 2;
+                showStep(currentStep);
+            }
+        });
+
+        document.getElementById('nextStep3').addEventListener('click', () => {
+            if (validateStep(2)) {
+                currentStep = 3;
+                showStep(currentStep);
+            }
+        });
+
+        document.getElementById('nextStep4').addEventListener('click', () => {
+            if (validateStep(3)) {
+                currentStep = 4;
+                showStep(currentStep);
+            }
+        });
+
+        document.getElementById('prevStep2').addEventListener('click', () => {
+            currentStep = 0;
+            showStep(currentStep);
+        });
+
+        document.getElementById('prevStep3').addEventListener('click', () => {
+            currentStep = 1;
+            showStep(currentStep);
+        });
+
+        document.getElementById('prevStep4').addEventListener('click', () => {
+            currentStep = 2;
+            showStep(currentStep);
+        });
+
+        document.getElementById('prevStep5').addEventListener('click', () => {
+            currentStep = 3;
+            showStep(currentStep);
+        });
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (validateStep(4)) {
+                const formData = new FormData(form);
+                const driverData = Object.fromEntries(formData.entries());
+                console.log('Driver data:', driverData);
+                alert('Driver created successfully!');
+                form.reset();
+                currentStep = 0;
+                showStep(currentStep);
+            }
+        });
+    </script>
+</body>
+</html>
