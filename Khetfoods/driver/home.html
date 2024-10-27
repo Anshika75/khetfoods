@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <div class="max-w-md mx-auto bg-white min-h-screen">
+        <header class="p-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl text-gray-700 font-bold">Welcome <span class="text-yellow-600">Luffy</span></h1>
+            </div>
+            <img src="https://i.pinimg.com/736x/bd/46/35/bd463547b9ae986ba4d44d717828eb09.jpg" alt="Profile"
+                class="w-10 h-10 rounded-full border border-yellow-600 border-6 p-[0.5px]">
+        </header>
+
+        <div class="p-4">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl text-gray-700 font-bold">Deliveries</h2>
+                <p class="text-yellow-600 font-semibold">12/30 Deliveries Made</p>
+            </div>
+
+            <div class="bg-gray-100 p-2 rounded-md mb-4">
+                <input type="date" id="dateSelector" class="w-full bg-transparent text-gray-700" value="2024-10-17">
+            </div>
+
+            <div id="deliveriesList">
+                <div class="bg-gray-100 p-3 rounded-md mb-4">
+                    <h3 class="text-xl font-bold text-gray-700">Nami Cat</h3>
+                    <p class="text-gray-600 mb-2">H.No. 214, Cocoyasi Village, Conomi Island, East Blue, Lougue
+                        Town, Near Grand Line</p>
+                    <p class="mb-4 text-gray-700 font-medium">Milk - 2l, Butter - 1 Packet</p>
+                   
+                    <div class="mt-6 flex flex-col md:flex-row items-center justify-between space-y-3">
+                        <button type="submit" class="bg-yellow-500 text-white px-4 w-full md:w-auto py-2 rounded hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50">
+                            Mark as Delivered
+                        </button>
+                        <button type="button" class="bg-gray-300 text-gray-700 px-4 w-full md:w-auto py-2 rounded hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                            Mark as Failed
+                        </button>
+                    </div>
+                    <p class="text-sm mt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline mr-1" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                        </svg>
+                        Customer gave cash? <a href="#" class="font-semibold text-yellow-600">Inform here</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
