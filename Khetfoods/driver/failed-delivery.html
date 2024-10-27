@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failed Delivery Reason</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-500 font-sans">
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
+            <div class="flex justify-between items-center p-4 border-b">
+                <h1 class="text-xl font-semibold text-gray-800">Failed Delivery Reason</h1>
+                <button id="closeButton" class="text-gray-600 hover:text-gray-800">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <form id="failedDeliveryForm" class="p-4">
+                <p class="text-gray-600 mb-4">State the reason due to which you were unable to deliver.</p>
+                <textarea id="reason" name="reason" rows="3" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-yellow-600" placeholder="Reason for failed delivery" required></textarea>
+                <div class="flex justify-end mt-4 space-x-2">
+                    <button type="button" id="cancelButton" class="px-4 py-2 border border-yellow-600 text-yellow-600 rounded hover:bg-yellow-600 hover:text-white transition-colors">
+                        Cancel
+                    </button>
+                    <button type="submit" class="px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-600-dark transition-colors">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
