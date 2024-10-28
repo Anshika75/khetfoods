@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Subscription</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFCC00',
+                        'primary-foreground': '#000000',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold w-full text-center text-yellow-800 mb-6">Edit Subscription</h1>
+        
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="flex flex-col md:flex-row mb-6">
+                <div class="w-full md:w-1/3 mb-4 md:mb-0">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PHOTO-2024-07-12-09-30-33%201-IIToyTatDGOcrlSw2dYbPtUEg97BMY.jpg" alt="Ergonomic Wool Shirt" class="w-full h-auto rounded-lg">
+                </div>
+                <div class="w-full md:w-2/3 md:pl-6">
+                    <h2 class="text-2xl font-bold text-gray-800">
+                        Amul Gold Milk 1L
+                    </h2>
+                    <p class="text-xl font-bold text-yellow-700">Unit Price: $622</p>
+                </div>
+            </div>
+            
+            <form>
+                <div class="mb-4">
+                    <label for="start-date" class="block text-gray-800 font-bold mb-2">Start Date</label>
+                    <input type="date" id="start-date" name="start-date" class="w-full p-2 border border-gray-300 rounded-md">
+                </div>
+                
+                <div class="mb-4">
+                    <label for="interval" class="block text-gray-800 font-bold mb-2">Interval</label>
+                    <select id="interval" name="interval" class="w-full p-2 border border-gray-300 rounded-md">
+                        <option value="daily">Daily</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                </div>
+                
+                <div id="daily-quantity" class="mb-4">
+                    <label for="daily-count" class="block text-gray-800 font-bold mb-2">Daily Quantity</label>
+                    <input type="number" id="daily-count" name="daily-count" min="1" value="1" class="w-full p-2 border border-gray-300 rounded-md">
+                </div>
+                
+                <div id="custom-interval" class="mb-4 hidden">
+                    <p class="text-gray-700 font-bold mb-2">Delivery Counts for Each Day</p>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div>
+                            <label for="sunday-count" class="block text-gray-600 font-semibold mb-1">Sunday</label>
+                            <input type="number" id="sunday-count" name="sunday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="monday-count" class="block text-gray-600 font-semibold mb-1">Monday</label>
+                            <input type="number" id="monday-count" name="monday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="tuesday-count" class="block text-gray-600 font-semibold mb-1">Tuesday</label>
+                            <input type="number" id="tuesday-count" name="tuesday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="wednesday-count" class="block text-gray-600 font-semibold mb-1">Wednesday</label>
+                            <input type="number" id="wednesday-count" name="wednesday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="thursday-count" class="block text-gray-600 font-semibold mb-1">Thursday</label>
+                            <input type="number" id="thursday-count" name="thursday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="friday-count" class="block text-gray-600 font-semibold mb-1">Friday</label>
+                            <input type="number" id="friday-count" name="friday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="saturday-count" class="block text-gray-600 font-semibold mb-1">Saturday</label>
+                            <input type="number" id="saturday-count" name="saturday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <label class="flex items-center">
+                        <input type="checkbox" id="pause-subscription" name="pause-subscription" class="mr-2">
+                        <span class="text-gray-700 font-semibold">Pause Subscription</span>
+                    </label>
+                </div>
+                
+                <div id="pause-dates" class="mb-4 hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="pause-start-date" class="block text-gray-800 font-bold mb-2">Pause Start Date</label>
+                            <input type="date" id="pause-start-date" name="pause-start-date" class="w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="pause-end-date" class="block text-gray-800 font-bold mb-2">Pause End Date</label>
+                            <input type="date" id="pause-end-date" name="pause-end-date" class="w-full p-2 border border-gray-300 rounded-md">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-between items-center">
+                    <button type="button" class="px-6 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400">Back</button>
+                    <button type="submit" class="px-6 py-2 bg-primary text-primary-foreground rounded-md hover:bg-yellow-400">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const intervalSelect = document.getElementById('interval');
+        const dailyQuantity = document.getElementById('daily-quantity');
+        const customInterval = document.getElementById('custom-interval');
+        const pauseSubscription = document.getElementById('pause-subscription');
+        const pauseDates = document.getElementById('pause-dates');
+
+        intervalSelect.addEventListener('change', function() {
+            if (this.value === 'daily') {
+                dailyQuantity.classList.remove('hidden');
+                customInterval.classList.add('hidden');
+            } else {
+                dailyQuantity.classList.add('hidden');
+                customInterval.classList.remove('hidden');
+            }
+        });
+
+        pauseSubscription.addEventListener('change', function() {
+            pauseDates.classList.toggle('hidden', !this.checked);
+        });
+    </script>
+</body>
+</html>
