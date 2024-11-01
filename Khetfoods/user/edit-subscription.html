@@ -51,7 +51,11 @@
                 
                 <div id="daily-quantity" class="mb-4">
                     <label for="daily-count" class="block text-gray-800 font-bold mb-2">Daily Quantity</label>
-                    <input type="number" id="daily-count" name="daily-count" min="1" value="1" class="w-full p-2 border border-gray-300 rounded-md">
+                    <div class="flex items-center">
+                        <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-l-md" onclick="decrementQuantity('daily-count')">-</button>
+                        <input type="number" id="daily-count" name="daily-count" min="1" value="1" class="w-full p-2 border-t border-b border-gray-300 text-center">
+                        <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-r-md" onclick="incrementQuantity('daily-count')">+</button>
+                    </div>
                 </div>
                 
                 <div id="custom-interval" class="mb-4 hidden">
@@ -59,31 +63,59 @@
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                         <div>
                             <label for="sunday-count" class="block text-gray-600 font-semibold mb-1">Sunday</label>
-                            <input type="number" id="sunday-count" name="sunday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                            <div class="flex items-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-l-md" onclick="decrementQuantity('sunday-count')">-</button>
+                                <input type="number" id="sunday-count" name="sunday-count" min="0" value="0" class="w-full p-2 border-t border-b border-gray-300 text-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-r-md" onclick="incrementQuantity('sunday-count')">+</button>
+                            </div>
                         </div>
                         <div>
                             <label for="monday-count" class="block text-gray-600 font-semibold mb-1">Monday</label>
-                            <input type="number" id="monday-count" name="monday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                            <div class="flex items-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-l-md" onclick="decrementQuantity('monday-count')">-</button>
+                                <input type="number" id="monday-count" name="monday-count" min="0" value="0" class="w-full p-2 border-t border-b border-gray-300 text-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-r-md" onclick="incrementQuantity('monday-count')">+</button>
+                            </div>
                         </div>
                         <div>
                             <label for="tuesday-count" class="block text-gray-600 font-semibold mb-1">Tuesday</label>
-                            <input type="number" id="tuesday-count" name="tuesday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                            <div class="flex items-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-l-md" onclick="decrementQuantity('tuesday-count')">-</button>
+                                <input type="number" id="tuesday-count" name="tuesday-count" min="0" value="0" class="w-full p-2 border-t border-b border-gray-300 text-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-r-md" onclick="incrementQuantity('tuesday-count')">+</button>
+                            </div>
                         </div>
                         <div>
                             <label for="wednesday-count" class="block text-gray-600 font-semibold mb-1">Wednesday</label>
-                            <input type="number" id="wednesday-count" name="wednesday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                            <div class="flex items-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-l-md" onclick="decrementQuantity('wednesday-count')">-</button>
+                                <input type="number" id="wednesday-count" name="wednesday-count" min="0" value="0" class="w-full p-2 border-t border-b border-gray-300 text-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-r-md" onclick="incrementQuantity('wednesday-count')">+</button>
+                            </div>
                         </div>
                         <div>
                             <label for="thursday-count" class="block text-gray-600 font-semibold mb-1">Thursday</label>
-                            <input type="number" id="thursday-count" name="thursday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                            <div class="flex items-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-l-md" onclick="decrementQuantity('thursday-count')">-</button>
+                                <input type="number" id="thursday-count" name="thursday-count" min="0" value="0" class="w-full p-2 border-t border-b border-gray-300 text-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-r-md" onclick="incrementQuantity('thursday-count')">+</button>
+                            </div>
                         </div>
                         <div>
                             <label for="friday-count" class="block text-gray-600 font-semibold mb-1">Friday</label>
-                            <input type="number" id="friday-count" name="friday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                            <div class="flex items-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-l-md" onclick="decrementQuantity('friday-count')">-</button>
+                                <input type="number" id="friday-count" name="friday-count" min="0" value="0" class="w-full p-2 border-t border-b border-gray-300 text-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-r-md" onclick="incrementQuantity('friday-count')">+</button>
+                            </div>
                         </div>
                         <div>
                             <label for="saturday-count" class="block text-gray-600 font-semibold mb-1">Saturday</label>
-                            <input type="number" id="saturday-count" name="saturday-count" min="0" value="0" class="w-full p-2 border border-gray-300 rounded-md">
+                            <div class="flex items-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-l-md" onclick="decrementQuantity('saturday-count')">-</button>
+                                <input type="number" id="saturday-count" name="saturday-count" min="0" value="0" class="w-full p-2 border-t border-b border-gray-300 text-center">
+                                <button type="button" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-r-md" onclick="incrementQuantity('saturday-count')">+</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,6 +168,18 @@
         pauseSubscription.addEventListener('change', function() {
             pauseDates.classList.toggle('hidden', !this.checked);
         });
+
+        function incrementQuantity(id) {
+            const input = document.getElementById(id);
+            input.value = parseInt(input.value) + 1;
+        }
+
+        function decrementQuantity(id) {
+            const input = document.getElementById(id);
+            if (parseInt(input.value) > parseInt(input.min)) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
     </script>
 </body>
 </html>
