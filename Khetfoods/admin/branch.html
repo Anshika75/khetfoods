@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khet Foods Dashboard - New Branch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="flex h-screen">
+        <aside class="w-64 bg-[#1E2533] text-white">
+            <div class="p-4">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PHOTO-2024-07-12-09-30-33%201-IIToyTatDGOcrlSw2dYbPtUEg97BMY.jpg" alt="Khet Foods Logo" class="w-32 mx-auto mb-8">
+                <nav>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-[#2A3441] rounded text-gray-300 hover:text-white">
+                            ← Back to App
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-[#2A3441] rounded text-gray-300 hover:text-white">
+                            Jumpstart
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-[#2A3441] rounded text-gray-300 hover:text-white">
+                            Dashboard
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-[#2A3441] rounded text-gray-300 hover:text-white">
+                            Users
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-[#2A3441] rounded text-gray-300 hover:text-white">
+                            Plans
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-[#2A3441] rounded text-gray-300 hover:text-white">
+                            Products
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-[#2A3441] rounded text-gray-300 hover:text-white">
+                            Brands
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-[#2A3441] rounded text-gray-300 hover:text-white">
+                            Categories
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 hover:bg-[#2A3441] rounded text-gray-300 hover:text-white">
+                            Orders
+                        </a></li>
+                        <li><a href="#" class="flex items-center py-2 px-4 bg-[#2A3441] rounded text-white">
+                            Zones
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <main class="flex-1 p-8 overflow-auto">
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-8">
+                    <h1 class="text-3xl font-bold text-yellow-700">New Branch</h1>
+                </div>
+                
+                <form class="space-y-6">
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700" for="name">
+                            Name
+                        </label>
+                        <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" id="name" type="text">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700" for="businessName">
+                            Business name
+                        </label>
+                        <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" id="businessName" type="text">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700" for="fullAddress">
+                            Full address
+                        </label>
+                        <textarea class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" id="fullAddress" rows="3"></textarea>
+                    </div>
+
+                    <div class="flex items-center">
+                        <div>
+                            <button type="button" class="bg-transparent inline-flex items-center underline py-2 border-none text-sm font-medium rounded-md text-gray-700 transition-all">
+                                Set Your Location
+                            </button>
+                        </div>
+                        <input id="activeBranch" type="checkbox" class="ml-6 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                        <label for="activeBranch" class="ml-2 block text-sm text-gray-900">
+                            Active Branch
+                        </label>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                            Create Branch
+                        </button>
+                        <button type="button" class="bg-gray-200 inline-flex items-center px-4 py-2 border-none text-sm font-medium rounded-md text-gray-700 hover:bg-gray-300 shadow-sm transition-all">
+                            Back to Branches
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
